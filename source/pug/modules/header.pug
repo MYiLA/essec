@@ -1,0 +1,29 @@
+header
+  div.header
+    nav(class="header__hover")
+      a.header__logo(href="index.html")
+        img(src="img/logo-essec.png" width="159" alt="ESSEC logo")
+      p.header__slogan The pioneering spirit
+      button(class="main-nav__burger" type="button" aria-label="open menu")
+      div(class="header__main-nav main-nav main-nav--close")
+        div(class="wrap")
+          nav(class="main-nav__wrap-popup")
+            div(class="main-nav__main-nav")
+              button(class="main-nav__close" type="button" aria-label="close menu")
+              ul(class="main-nav__list")
+                li(class="main-nav__item")
+                  a(class="main-nav__link" href="index.html") Home
+                li(class="main-nav__item")
+                  a(class="main-nav__link" href="#") About ESSEC
+                li(class="main-nav__item")
+                  a(class="main-nav__link" href="programmes-page.html") Online Programmers
+                li(class="main-nav__item")
+                  a(class="main-nav__link" href="#") Fees
+                li(class="main-nav__item")
+                  a(class="main-nav__link" href="#") Testimonials
+              div.main-nav__contact-popup.nav-contact
+                p.nav-contact-message from Monday to Friday 9am CET - 5pm CET
+                button.nav-contact-btn(type="button") Call us
+      div.header__contact.nav-contact
+        p.nav-contact-message from Monday to Friday 9am CET - 5pm CET
+        button.nav-contact-btn(type="button") Call us
