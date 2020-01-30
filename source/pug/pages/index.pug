@@ -14,29 +14,33 @@ html(lang="en")
   body
     include ../modules/header
 
-    main(class="home-page")
-    div.home-page__hover
-      h1 Study online with ESSEC Augmented Digital Campus
-      a(href="#") Explore our online courses now
+    main.home-page
+      div.home-page__hover
+        h1.home-page__hover-title Study online with ESSEC Augmented Digital Campus
+        a.home-page__hover-btn(href="#") Explore our online courses now
 
-    section.home-page__advantage.advantage
-      include ../modules/advantage
-    section.home-page__programmes.programme
-      include ../modules/programmes
-      //- section(class="home-page__landing-promo landing-promo wrap")
-      //-   include ../modules/landing-promo
-      //- div(class="home-page__content-slider content-slider" id="content-slider")
-      //-   include ../modules/content-slider
-      //- section(class="home-page__content-reviews content-reviews wrap")
-      //-   include ../modules/content-reviews
-      //- section(class="home-page__advantage advantage")
-      //-   include ../modules/advantage
-      //- div(class="home-page__provoke provoke")
-      //-   include ../modules/provoke
+      section.home-page__advantage.advantage
+        include ../modules/advantage
 
-    //- include ../modules/footer
-    //- include ../modules/form
-    //- include ../modules/popup-video
+      section.home-page__programmes.programmes
+        h2.programmes__title Discover our online Digital Transformation programmes
+        include ../modules/programmes
+
+      div.home-page__message.message
+        p.message__desc Discover all our Digital Transformation programmes
+        a.message__btn View all online courses now
+
+      section.home-page__media.media
+        include ../modules/media
+
+      section.home-page__review.review
+        include ../modules/review
+
+      div.home-page__message.message
+        p.message__desc Become an expert in Digital Transformation with ESSEC Business School from anywhere in the world. 
+        a.message__btn View all online courses now
+
+    include ../modules/footer
 
     script(src="js/polyfill.min.js")
     script(src="lib/jquery-2.2.3.min.js")

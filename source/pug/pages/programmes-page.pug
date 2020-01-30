@@ -14,28 +14,33 @@ html(lang="en")
   body
     include ../modules/header
 
-    main(class="home-page")
-      h1(class="visually-hidden") entreprise d'éducation internationale
+    main.programmes-page
+      .programmes-page__hover
+        h1.programmes-page__hover-title Online accredited courses in Digital Transformation
+        p.programmes-page__hover-appeal Discover all our courses
 
+      section.programmes-page__programmes.programmes
+        h2.programmes__title Online executive certificates for managers looking to increase their employability
+        p.programmes__desc Executive Certificates are perfect for managers who need to boost their digital skills and tackle digital transformation in its different areas.
+        include ../modules/programmes
 
-      //- section(class="home-page__landing-promo landing-promo wrap")
-      //-   include ../modules/landing-promo
-      //- div(class="home-page__content-slider content-slider" id="content-slider")
-      //-   include ../modules/content-slider
-      //- section(class="home-page__content-reviews content-reviews wrap")
-      //-   include ../modules/content-reviews
-      //- section(class="home-page__advantage advantage")
-      //-   include ../modules/advantage
-      //- div(class="home-page__provoke provoke")
-      //-   include ../modules/provoke
+      section.programmes-page__big-programmes.big-programmes.big-programmes--boost
+        h2
+        p
+        div
+          div
+          div
 
-    //- include ../modules/footer
-    //- include ../modules/form
-    //- include ../modules/popup-video
+      div.home-page__message.message
+        p.message__desc Get in touch to discover where online learning could take you
+        a.message__btn Contact us now
+
+    include ../modules/footer
 
     script(src="js/polyfill.min.js")
     script(src="lib/jquery-2.2.3.min.js")
     script(src="lib/glide/glide.min.js")
+    script(src="js/header.js")
     script(src="js/script.js")
     
     //- script(type='text/javascript' defer) new Glide('.glide', {type: 'carousel',startAt: 0, perView: 3, gap: 30, autoplay: 4000, animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)', dragThreshold: 50, animationDuration: 1000, breakpoints: { 1100: {perView: 2 },550: {perView: 1}},}).mount();
