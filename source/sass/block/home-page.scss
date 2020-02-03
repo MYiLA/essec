@@ -2,11 +2,7 @@
   background-color: $white;
   padding-bottom: 105px;
   background-color: $white;
-  .programmes__title-long,
-  .programmes__desc-long,
-  .programmes__program-title-long,
-  .programmes__program-desc-long,
-  .program-addition {
+  .programmes__programm-long {
     display: none;
   }
 }
@@ -58,7 +54,14 @@
   margin-bottom: 86px;
 }
 
-// .home-page__message {}
+.home-page__message {
+  margin-bottom: 70px;
+}
 
-// .home-page__media {}
-// .home-page__review {}
+.home-page__media {
+  margin-bottom: 70px;
+}
+
+.home-page__review {
+  margin-bottom: 70px;
+}

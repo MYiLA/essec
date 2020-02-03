@@ -11,10 +11,61 @@
 //   //   }
 //   // }
 // }
+.media__wrap {
+  position: relative;
+  height: 400px;
+}
+.media__wrap-desc {
+  position: absolute;
+  background-color: rgba(89, 81, 85, .5);
+  background-size: cover;
+  background-position: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 175px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 
-// .media__wrap{}
-// .media__wrap-desc{}
-// .media__play-btn{}
-// .media__title{}
-// .media__desc{}
-// .media__video{}
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(89, 81, 85, .5);
+  }
+}
+.media__play-btn {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  border: none;
+  background-image: url(../img/icon-play.svg);
+  background-repeat: no-repeat;
+}
+.media__title {
+  position: relative;
+  z-index: 1;
+  color: $white;
+}
+.media__desc {
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  z-index: 1;
+  color: $white;
+}
+.media__video {
+  iframe {
+    width: 100%;
+  }
+}

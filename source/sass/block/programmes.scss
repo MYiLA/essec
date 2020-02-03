@@ -10,12 +10,15 @@
   margin-bottom: 60px;
 }
 
-.programmes__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.programmes__desc {
+  text-align: center;
 }
-.programmes__item {
+
+.programmes__glide {
+position: relative;
+}
+
+.programmes__slide-wrap {
   margin: 0 auto;
   margin-bottom: 10px;
   padding: 15px;
@@ -24,7 +27,6 @@
   &--master {
     border: 1px solid $red;
   }
-  &--page-master{}
 }
 .programmes__status {
   text-transform: uppercase;
@@ -79,7 +81,17 @@
   text-transform: uppercase;
 }
 
+.programmes__arrow-wrap {
+ position: absolute;
+ width: 100%;
+ top:42%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
 .programmes__arrow {
+  position: absolute;
+  top: 0;
   display: block;
   width: 15px;
   height: 15px;
@@ -90,14 +102,19 @@
   border-left: none;
   border-top: none;
   &--left {
+    left: 0;
    transform: rotate(135deg);
   }
 
   &--right {
+    right: 0;
     transform: rotate(-45deg);
    }
 }
 
+.programmes__page-master {
+  border: 1px solid $red;
+}
 // .programmes__title-long{}
 // .programmes__desc-long{}
 // .programmes__program-title-long{}
