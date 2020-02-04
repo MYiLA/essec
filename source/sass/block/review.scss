@@ -4,7 +4,7 @@
 .review__title {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 56px;
+  margin-bottom: 65px;
 }
 
 .review__glide{
@@ -14,17 +14,18 @@
 // .review__wrap{}
 
 .review__slide {
-  padding: 20px;
+  padding-top: 20px;
   padding-left: 40px;
+  padding-bottom: 50px;
   padding-right: 40px;
 }
 
 .review__list {
   color: $white;
 }
-.review__item {
+// .review__item {
   
-}
+// }
 
 .review__arrow-wrap {
   position: absolute;
@@ -57,12 +58,15 @@
     }
  }
 .review__desc {
+  font-size: 22px;
+  line-height: 32px;
   margin-bottom: 40px;
 }
 
 .review__autor {
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 0;
 }
 // .review__arrow {
 //   .fa-angle-left
