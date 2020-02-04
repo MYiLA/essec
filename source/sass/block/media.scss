@@ -37,7 +37,12 @@
     left: 0;
     background-color: rgba(89, 81, 85, .5);
   }
+
+  @media (max-width:385px) {
+    padding-top: 160px;
+  }
 }
+
 .media__play-btn {
   position: absolute;
   z-index: 1;
@@ -65,7 +70,10 @@
   color: $white;
 }
 .media__video {
+  width: 100%;
+  height: 400px;
   iframe {
-    width: 100%;
+    height: 400px;
+    margin: 0 auto;
   }
 }
