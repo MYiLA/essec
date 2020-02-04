@@ -16,6 +16,7 @@
 
 .programmes__glide {
 position: relative;
+margin-bottom: 30px;
 }
 
 .programmes__slide-wrap {
@@ -69,9 +70,11 @@ position: relative;
   margin: 0;
   padding: 0;
   margin-bottom: 7px;
+  color: #6b6b6b;
 }
 .programmes__info-name {
   font-weight: 700px;
+  color: #262626;
 }
 .programmes__more {
   font-size: 12px;
@@ -115,8 +118,47 @@ position: relative;
 .programmes__page-master {
   border: 1px solid $red;
 }
-// .programmes__title-long{}
-// .programmes__desc-long{}
-// .programmes__program-title-long{}
-// .programmes__program-desc-long{}
+
+.programmes__title-long {
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.programmes__desc-long {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.programmes__page-master {
+  background-color: #f4f4f4;
+  padding-top: 50px;
+  padding-right: 22px;
+  padding-bottom: 50px;
+  padding-left: 22px;
+  
+}
+
+.programmes__item-wrap {
+  padding-top: 50px;
+  padding-left: 18px;
+  padding-right: 18px;
+  .programmes__status {
+    max-width: 230px;
+  }
+}
+
+.programmes__program-title-long {
+  margin-bottom: 30px;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+.programmes__program-desc-long {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 19px;
+}
 // .programmes__program-addition{}

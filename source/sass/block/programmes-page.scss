@@ -1,19 +1,34 @@
 .programmes-page {
- min-height: 355px;
+ padding-bottom: 20px;
+ background-color: $white;
  .programmes__slide-wrap--master {
    display: none;
  }
+
+ .message__desc {
+font-size: 22px;
+line-height: 29px;
 }
+
+.message__btn {
+  background-color: $green;
+}
+}
+
+.programmes__page-master {
+  margin-bottom: 75px;
+}
+
 .programmes-page__hover {
   position: relative;
   background-color: rgba(66, 139, 202, .65);
-  background-image: url(../img/programmes-hover.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 50px;
+  padding-top: 120px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 150px;
   margin-bottom: 80px;
 
   &::before {
@@ -26,14 +41,17 @@
     background-color: rgba(66, 139, 202, .65);
   }
 }
+
 .programmes-page__hover-title {
   position: relative;
   z-index: 1;
+  margin-bottom: 30px;
   font-size: 24px;
   line-height: 32px;
   color: $white;
   font-weight: 400;
 }
+
 .programmes-page__hover-appeal {
   position: relative;
   z-index: 1;
@@ -41,4 +59,7 @@
   font-size: 16px;
   line-height: 19px;
 }
-// .programmes-page__programmes
+
+.programmes-page__message {
+  margin-bottom: 80px;
+}
