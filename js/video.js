@@ -1,0 +1,1 @@
+"use strict";var playBtnElement=document.querySelector(".media__play-btn"),videoCoverElement=document.querySelector(".media__wrap-desc");playBtnElement.addEventListener("click",(function(){closeAnimation(videoCoverElement)}));
