@@ -8,7 +8,7 @@ const programmesGlide = new Glide('.programmes__glide', {
       dragThreshold: 50,
       animationDuration: 1000,
       breakpoints: {
-        800: {
+        830: {
           perView: 2
         },
         660: {
