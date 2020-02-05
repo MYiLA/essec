@@ -77,3 +77,23 @@
     margin: 0 auto;
   }
 }
+
+@media(min-width:$tablet-width) {
+  .media__wrap-desc {
+    padding-top: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .media__play-btn {
+    top: 50%;
+  }
+}
+
+// @media(min-width:$desktop-width) {
+
+// }
+
+// @media (min-width: 1440px) {
+
+// }

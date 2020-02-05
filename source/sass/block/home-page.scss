@@ -2,6 +2,7 @@
   background-color: $white;
   padding-bottom: 20px;
   background-color: $white;
+
   .programmes__programm-long {
     display: none;
   }
@@ -10,15 +11,14 @@
 .home-page__hover {
   position: relative;
   padding-top: 160px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 250px;
   width: 100%;
   background-color: $blue-black;
   background-size: cover;
   background-position: center;
   text-align: center;
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -50,6 +50,7 @@
   margin-top: -55px;
   margin-bottom: 80px;
 }
+
 .home-page__programmes {
   margin-bottom: 86px;
 }
@@ -64,4 +65,46 @@
 
 .home-page__review {
   margin-bottom: 100px;
+}
+
+@media(min-width:$tablet-width) {
+  .home-page {
+    padding-bottom: 40px;
+  }
+
+  .home-page__hover {
+    padding-top: 90px;
+    padding-bottom: 275px;
+  }
+
+  .home-page__hover-title {
+    max-width: 650px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 42px;
+    line-height: 55px;
+  }
+
+  .home-page__hover-btn {
+    margin-left: 0;
+  }
+
+  .home-page__advantage {
+    margin-top: -170px;
+    margin-bottom: 100px;
+  }
+
+  .home-page__media {
+    margin-bottom: 85px;
+  }
+
+  .home-page__review {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .home-page {
+  padding-bottom: 80px;
+  }
 }

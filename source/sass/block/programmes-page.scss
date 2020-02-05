@@ -1,18 +1,19 @@
 .programmes-page {
- padding-bottom: 20px;
- background-color: $white;
- .programmes__slide-wrap--master {
-   display: none;
- }
+  padding-bottom: 20px;
+  background-color: $white;
 
- .message__desc {
-font-size: 22px;
-line-height: 29px;
-}
+  .programmes__slide-wrap--master {
+    display: none;
+  }
 
-.message__btn {
-  background-color: $green;
-}
+  .message__desc {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .message__btn {
+    background-color: $green;
+  }
 }
 
 .programmes__page-master {
@@ -26,8 +27,6 @@ line-height: 29px;
   background-position: center;
   text-align: center;
   padding-top: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 150px;
   margin-bottom: 80px;
 
@@ -62,4 +61,34 @@ line-height: 29px;
 
 .programmes-page__message {
   margin-bottom: 80px;
+}
+
+@media(min-width:$tablet-width) {
+  .programmes-page {
+    padding-bottom: 80px;
+  }
+
+  .programmes-page__hover-title {
+    margin-bottom: 15px;
+  }
+
+  .programmes__page-master {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programmes-page__message {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .message__btn {
+     max-width: 210px; 
+    }
+  }
+}
+
+@media(min-width:$desktop-width) {
+  .programmes__item-wrap {
+    padding-left: 70px;
+  }
 }

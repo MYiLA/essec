@@ -8,6 +8,7 @@
   padding-left: 30px;
   padding-right: 30px;
 }
+
 .message__desc {
   max-width: 265px;
   margin: 0 auto;
@@ -22,3 +23,33 @@
   margin: 0 auto;
   background-color: $red;
 }
+
+@media(min-width:$tablet-width) {
+  .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 22px;
+  }
+
+  .message__desc {
+    max-width: 70%;
+    margin: 0;
+    margin-right: 10px;
+    padding-top: 7px;
+    text-align: left;
+  }
+
+  .message__btn {
+    margin-right: 0;
+  }
+}
+
+// @media(min-width:$desktop-width) {
+
+// }
+
+// @media (min-width: 1440px) {
+
+// }
