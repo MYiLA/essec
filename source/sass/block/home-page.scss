@@ -15,7 +15,7 @@
   width: 100%;
   background-color: $blue-black;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   text-align: center;
 
   &::before {
@@ -47,20 +47,20 @@
 }
 
 .home-page__advantage {
-  margin-top: -55px;
-  margin-bottom: 80px;
+  margin-top: -175px;
+  margin-bottom: 100px;
 }
 
 .home-page__programmes {
-  margin-bottom: 86px;
+  margin-bottom: 60px;
 }
 
 .home-page__message {
-  margin-bottom: 85px;
+  margin-bottom: 100px;
 }
 
 .home-page__media {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 .home-page__review {
@@ -72,8 +72,12 @@
     padding-bottom: 40px;
   }
 
+  .home-page__programmes {
+    margin-bottom: 75px;
+  }
+
   .home-page__hover {
-    padding-top: 90px;
+    padding-top: 110px;
     padding-bottom: 275px;
   }
 
@@ -90,21 +94,13 @@
   }
 
   .home-page__advantage {
-    margin-top: -170px;
-    margin-bottom: 100px;
-  }
-
-  .home-page__media {
-    margin-bottom: 85px;
-  }
-
-  .home-page__review {
-    margin-bottom: 80px;
+    margin-top: -232px;
   }
 }
 
-@media (min-width: 1440px) {
-  .home-page {
-  padding-bottom: 80px;
+@media (min-width: $desktop-width) {
+
+  .home-page__advantage {
+    margin-top: -196px;
   }
 }

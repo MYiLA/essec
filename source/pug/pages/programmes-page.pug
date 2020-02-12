@@ -23,14 +23,80 @@ html(lang="en")
         section.programmes-page__programmes.programmes
           h2.programmes__title-long Online executive certificates for managers looking to increase their employability
           p.programmes__desc-long Executive Certificates are perfect for managers who need to boost their digital skills and tackle digital transformation in its different areas.
-          include ../modules/programmes
+          .programmes__glide
+            .glide__track(data-glide-el="track")
+              ul.programmes__list.glide__slides
+                li.programmes__item.glide__slide
+                  .programmes__slide-wrap
+                    div.programmes__status
+                      span.programmes__status-open Open to admissions
+                      a.programmes__tag(href="#") Executive certificate
+                    h3.programmes__program-title Driving Digital Change: People & Processes
+                    p.programmes__program-desc Designed by recognised experts in change management, this Executive Certificate will help you  seamlessly lead the digital transformation of your organisation.
+                    div.programmes__info
+                      p.programmes__info-desc #[strong.programmes__info-name Next intake:] 27 January 2020
+                      p.programmes__info-desc #[strong.programmes__info-name Format:] 100% online, 100% in English
+                      p.programmes__info-desc #[strong.programmes__info-name Duration:] 8 weeks
+                      p.programmes__info-desc #[strong.programmes__info-name Recognition:] 8 ECTS credits
+                      p.programmes__info-desc #[strong.programmes__info-name Fees:] €4,500 excl. tax
+                    a.programmes__more(href="#") Learn more
+                      i.fas.fa-arrow-right
+
+                li.programmes__item.glide__slide
+                  .programmes__slide-wrap
+                    div.programmes__status
+                      span.programmes__status-open Open to admissions
+                      a.programmes__tag(href="#") Executive certificate
+                    h3.programmes__program-title Design Thinking & Agile Methods
+                    p.programmes__program-desc Our Executive Certificate involves practical training to ensure you achieve the depth of focus required in areas such as design and agile thinking.
+                    div.programmes__info
+                      p.programmes__info-desc #[strong.programmes__info-name Next intake:] 17 February 2020
+                      p.programmes__info-desc #[strong.programmes__info-name Format:] 100% online, 100% in English
+                      p.programmes__info-desc #[strong.programmes__info-name Duration:] 8 weeks
+                      p.programmes__info-desc #[strong.programmes__info-name Recognition:] 8 ECTS credits
+                      p.programmes__info-desc #[strong.programmes__info-name Fees:] €4,500 excl. tax
+                    a.programmes__more(href="#") Learn more
+                      i.fas.fa-arrow-right
+
+                li.programmes__item.glide__slide
+                  .programmes__slide-wrap
+                    div.programmes__status
+                      span.programmes__status-open Open to admissions
+                      a.programmes__tag(href="#") Executive certificate
+                    h3.programmes__program-title Big Data & Artificial Intelligence for Business
+                    p.programmes__program-desc This Executive Certificate provides an opportunity to explore ongoing developments in artificial intelligence, big data, the internet of things, blockchain, GDPR and quantum computing. 
+                    div.programmes__info
+                      p.programmes__info-desc #[strong.programmes__info-name Next intake:] 23 March 2020
+                      p.programmes__info-desc #[strong.programmes__info-name Format:] 100% online, 100% in English
+                      p.programmes__info-desc #[strong.programmes__info-name Duration:] 8 weeks
+                      p.programmes__info-desc #[strong.programmes__info-name Recognition:] 8 ECTS credits
+                      p.programmes__info-desc #[strong.programmes__info-name Fees:] €4,500 excl. tax
+                    a.programmes__more Learn more
+                      i.fas.fa-arrow-right
+
+                li.programmes__item.glide__slide
+                  .programmes__slide-wrap
+                    div.programmes__status
+                      span.programmes__status-open Open to admissions
+                      a.programmes__tag(href="#") Executive certificate
+                    h3.programmes__program-title Mastering Digital Business Models: From Design to Responsible Governance
+                    p.programmes__program-desc ESSEC professors have designed this Executive Certificate to provide managers with expertise on a platform-based approach to master digital business models.
+                    div.programmes__info
+                      p.programmes__info-desc #[strong.programmes__info-name Next intake:] 27 April 2020
+                      p.programmes__info-desc #[strong.programmes__info-name Format:] 100% online, 100% in English
+                      p.programmes__info-desc #[strong.programmes__info-name Duration:] 8 weeks
+                      p.programmes__info-desc #[strong.programmes__info-name Recognition:] 8 ECTS credits
+                      p.programmes__info-desc #[strong.programmes__info-name Fees:] €4,500 excl. tax
+                    a.programmes__more(href="#") Learn more
+                      i.fas.fa-arrow-right
+            div.programmes__arrow-wrap.glide__arrows(data-glide-el="controls")
+              button.programmes__arrow.programmes__arrow--left.glide__arrow.glide__arrow--left(type="button" aria-label="last slide" data-glide-dir="<")
+              button.programmes__arrow.programmes__arrow--right.glide__arrow.glide__arrow--right(type="button" aria-label="next slide" data-glide-dir=">")
           include ../modules/programmes__programm-long
 
         .programmes-page__message.message
           p.message__desc Get in touch to discover where online learning could take you
           a.message__btn(href="#") Contact us now
-
-    //- include ../modules/footer
 
     script(src="js/polyfill.min.js")
     script(src="lib/glide/glide.min.js")
@@ -38,4 +104,4 @@ html(lang="en")
     script(src="js/programmes-slider.js")
     
     
-    //- script(type='text/javascript' defer) new Glide('.glide', {type: 'carousel',startAt: 0, perView: 3, gap: 30, autoplay: 4000, animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)', dragThreshold: 50, animationDuration: 1000, breakpoints: { 1100: {perView: 2 },550: {perView: 1}},}).mount();
+    script(type='text/javascript' defer) new Glide('.glide', {type: 'carousel',startAt: 0, perView: 3, gap: 30, autoplay: 4000, animationTimingFunc: 'cubic-bezier(.36,.39,.31,1.02)', dragThreshold: 50, animationDuration: 1000, breakpoints: { 1100: {perView: 2 },550: {perView: 1}},}).mount();

@@ -9,24 +9,27 @@
 .programmes__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .programmes__desc {
   text-align: center;
 }
 
+.programmes__list {
+  margin: 0;
+}
+
 .programmes__glide {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .programmes__slide-wrap {
   margin: 0 auto;
-  margin-bottom: 10px;
   padding: 15px;
   background-color: #f8f8f8;
-  max-width: 255px;
+  width: 257px;
 
   &--master {
     border: 1px solid $red;
@@ -128,19 +131,17 @@
   }
 }
 
-.programmes__page-master {
-  border: 1px solid $red;
-}
-
 .programmes__title-long {
   font-size: 26px;
   line-height: 34px;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
 .programmes__desc-long {
-  margin-bottom: 80px;
+  margin-top: 0;
+  margin-bottom: 70px;
   text-align: center;
 }
 
@@ -150,7 +151,7 @@
   padding-right: 22px;
   padding-bottom: 50px;
   padding-left: 22px;
-
+  border: 1px solid $red;
 }
 
 .programmes__item-wrap {
@@ -176,12 +177,24 @@
   line-height: 19px;
 }
 
-// .programmes__program-addition{}
+@media(min-width: 660px) {
+  .programmes__glide {
+    width: 100%;
+  }
+}
 
 @media(min-width: $tablet-width) {
+  .programmes {
+    width: 100%;
+  }
+
   .programmes__title {
     text-align: left;
     margin-bottom: 30px;
+  }
+
+  .programmes__glide {
+    margin-bottom: 75px;
   }
 
   .programmes__list {
@@ -195,12 +208,18 @@
   }
 
   .programmes__item {
-    margin-right: 5%;
-    flex-basis: 30%;
+    margin-right: 25px;
+    width: 257px;
     margin-bottom: 25px;
 
     &:nth-child(3n+3) {
       margin-right: 0;
+    }
+  }
+
+  .programmes__programm-long {
+    .programmes__item {
+      width: auto;
     }
   }
 
@@ -242,13 +261,7 @@
 
 // }
 
-@media(min-width: 1440px) {
-  .programmes__programm-long {
-    .programmes__item {
-      width: auto;
-    }
-  }
-  
+@media(min-width: $desktop-width) {
   .programmes__item {
     width: 255px;
     margin-right: 25px;

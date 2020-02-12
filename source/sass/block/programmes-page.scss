@@ -17,7 +17,7 @@
 }
 
 .programmes__page-master {
-  margin-bottom: 75px;
+  margin-bottom: 100px;
 }
 
 .programmes-page__hover {
@@ -28,7 +28,7 @@
   text-align: center;
   padding-top: 120px;
   padding-bottom: 150px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 
   &::before {
     content: "";
@@ -60,7 +60,7 @@
 }
 
 .programmes-page__message {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 @media(min-width:$tablet-width) {
