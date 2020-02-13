@@ -18,6 +18,7 @@
 
 .programmes__list {
   margin: 0;
+  align-items: stretch;
 }
 
 .programmes__glide {
@@ -32,7 +33,8 @@
   width: 257px;
 
   &--master {
-    border: 1px solid $red;
+    margin-top: 1px;
+    box-shadow: 0 0 0 1px $red;
   }
 }
 
@@ -40,6 +42,7 @@
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .programmes__status-open {
@@ -58,15 +61,15 @@
 }
 
 .programmes__program-title {
-  margin-bottom: 15px;
-  min-height: 90px;
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 17px;
   line-height: 23px;
 }
 
 .programmes__program-desc {
-  min-height: 100px;
-  margin-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
   font-size: 14px;
   line-height: 16px;
   color: #606060;
@@ -76,7 +79,7 @@
   font-size: 12px;
   line-height: 14px;
   color: #262626;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .programmes__info-desc {
@@ -151,7 +154,11 @@
   padding-right: 22px;
   padding-bottom: 50px;
   padding-left: 22px;
-  border: 1px solid $red;
+  box-shadow: 0 0 0 1px $red;
+}
+
+.programmes__item {
+  display: flex;
 }
 
 .programmes__item-wrap {
@@ -197,17 +204,24 @@
     margin-bottom: 75px;
   }
 
+  .glide__slide {
+    height: auto;
+  }
+
   .programmes__list {
-    backface-visibility: visible;
-    transform-style: flat;
-    touch-action: none;
-    overflow: visible;
-    white-space: normal;
+    display: flex;
+    align-items: stretch;
     flex-wrap: wrap;
     justify-content: flex-start;
+    overflow: visible;
+  }
+
+  .glide__track {
+    overflow: visible;
   }
 
   .programmes__item {
+    justify-content: flex-start;
     margin-right: 25px;
     width: 257px;
     margin-bottom: 25px;
@@ -225,6 +239,10 @@
   }
 
   .programmes__slide-wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
     max-width: none;
     margin: 0;
   }
@@ -255,12 +273,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-
 }
-
-// @media(min-width:$desktop-width) {
-
-// }
 
 @media(min-width: $desktop-width) {
   .programmes__item {
@@ -275,9 +288,5 @@
     &:nth-child(4n+4) {
       margin-right: 0;
     }
-  }
-
-  .programmes__info {
-    margin-bottom: 35px;
   }
 }
