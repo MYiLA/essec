@@ -18,8 +18,7 @@
 
 .programmes__list {
   margin: 0;
-    display: flex;
-  flex-wrap: wrap;
+  display: flex;
   align-items: stretch;
   justify-content: flex-start;
 }
@@ -222,6 +221,7 @@
   }
 
   .programmes__list {
+    flex-wrap: wrap;
     overflow: visible;
   }
 
