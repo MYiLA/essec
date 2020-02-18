@@ -1,94 +1,101 @@
-.programmes-page {
+.programmes-page.update-02-2020 {
   padding-bottom: 20px;
   background-color: $white;
 
-  .programmes__slide-wrap--master {
-    display: none;
-  }
+  .update-02-2020 {
+    .programmes__slide-wrap--master {
+      display: none;
+    }
 
-  .message__desc {
-    font-size: 22px;
-    line-height: 29px;
-  }
+    .message__desc {
+      font-size: 22px;
+      line-height: 29px;
+    }
 
-  .message__btn {
-    background-color: $green;
-  }
-}
-
-.programmes__page-master {
-  margin-bottom: 100px;
-}
-
-.programmes-page__hover {
-  position: relative;
-  background-color: rgba(66, 139, 202, .65);
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding-top: 120px;
-  padding-bottom: 150px;
-  margin-bottom: 100px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(66, 139, 202, .65);
-  }
-}
-
-.programmes-page__hover-title {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
-  font-size: 24px;
-  line-height: 32px;
-  color: $white;
-  font-weight: 400;
-}
-
-.programmes-page__hover-appeal {
-  position: relative;
-  z-index: 1;
-  color: $white;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.programmes-page__message {
-  margin-bottom: 100px;
-}
-
-@media(min-width:$tablet-width) {
-  .programmes-page {
-    padding-bottom: 80px;
-  }
-
-  .programmes-page__hover-title {
-    margin-bottom: 15px;
+    .message__btn {
+      background-color: $green;
+    }
   }
 
   .programmes__page-master {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .programmes-page__hover {
+    position: relative;
+    background-color: rgba(66, 139, 202, .65);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    margin-bottom: 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(66, 139, 202, .65);
+    }
+  }
+
+  .programmes-page__hover-title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    color: $white;
+    font-weight: 400;
+  }
+
+  .programmes-page__hover-appeal {
+    position: relative;
+    z-index: 1;
+    color: $white;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   .programmes-page__message {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 100px;
+  }
+}
 
-    .message__btn {
-     max-width: 210px; 
+
+@media(min-width:$tablet-width) {
+  .programmes-page.update-02-2020 {
+    padding-bottom: 80px;
+  }
+
+  .update-02-2020 {
+    .programmes-page__hover-title {
+      margin-bottom: 15px;
+    }
+
+    .programmes__page-master {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .programmes-page__message {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      .message__btn {
+        max-width: 210px;
+      }
     }
   }
 }
 
 @media(min-width:$desktop-width) {
-  .programmes__item-wrap {
-    padding-left: 70px;
+  .update-02-2020 {
+    .programmes__item-wrap {
+      padding-left: 70px;
+    }
   }
 }

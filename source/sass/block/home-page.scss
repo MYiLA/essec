@@ -1,4 +1,4 @@
-.home-page {
+.home-page.update-02-2020 {
   background-color: $white;
   padding-bottom: 20px;
   background-color: $white;
@@ -8,99 +8,105 @@
   }
 }
 
-.home-page__hover {
-  position: relative;
-  padding-top: 160px;
-  padding-bottom: 250px;
-  width: 100%;
-  background-color: $blue-black;
-  background-size: cover;
-  background-position: top center;
-  text-align: center;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: $blue-black;
-  }
-}
-
-.home-page__hover-title {
-  position: relative;
-  margin-bottom: 50px;
-  font-size: 38px;
-  line-height: 50px;
-  color: $white;
-}
-
-.home-page__hover-btn {
-  @include btn;
-  position: relative;
-  margin: 0 auto;
-  max-width: 265px;
-  background-color: $red;
-  color: $white;
-}
-
-.home-page__advantage {
-  margin-top: -175px;
-  margin-bottom: 100px;
-}
-
-.home-page__programmes {
-  margin-bottom: 60px;
-}
-
-.home-page__message {
-  margin-bottom: 100px;
-}
-
-.home-page__media {
-  margin-bottom: 100px;
-}
-
-.home-page__review {
-  margin-bottom: 100px;
-}
-
-@media(min-width:$tablet-width) {
-  .home-page {
-    padding-bottom: 40px;
-  }
-
-  .home-page__programmes {
-    margin-bottom: 75px;
-  }
-
+.update-02-2020 {
   .home-page__hover {
-    padding-top: 110px;
-    padding-bottom: 275px;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 250px;
+    width: 100%;
+    background-color: $blue-black;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $blue-black;
+    }
   }
 
   .home-page__hover-title {
-    max-width: 650px;
-    margin-bottom: 40px;
-    text-align: left;
-    font-size: 42px;
-    line-height: 55px;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 38px;
+    line-height: 50px;
+    color: $white;
   }
 
   .home-page__hover-btn {
-    margin-left: 0;
+    @include btn;
+    position: relative;
+    margin: 0 auto;
+    max-width: 265px;
+    background-color: $red;
+    color: $white;
   }
 
   .home-page__advantage {
-    margin-top: -232px;
+    margin-top: -175px;
+    margin-bottom: 100px;
+  }
+
+  .home-page__programmes {
+    margin-bottom: 60px;
+  }
+
+  .home-page__message {
+    margin-bottom: 100px;
+  }
+
+  .home-page__media {
+    margin-bottom: 100px;
+  }
+
+  .home-page__review {
+    margin-bottom: 100px;
+  }
+}
+
+
+@media(min-width:$tablet-width) {
+  .home-page.update-02-2020 {
+    padding-bottom: 40px;
+  }
+
+  .update-02-2020 {
+    .home-page__programmes {
+      margin-bottom: 75px;
+    }
+
+    .home-page__hover {
+      padding-top: 110px;
+      padding-bottom: 275px;
+    }
+
+    .home-page__hover-title {
+      max-width: 650px;
+      margin-bottom: 40px;
+      text-align: left;
+      font-size: 42px;
+      line-height: 55px;
+    }
+
+    .home-page__hover-btn {
+      margin-left: 0;
+    }
+
+    .home-page__advantage {
+      margin-top: -232px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
-
-  .home-page__advantage {
-    margin-top: -196px;
+  .update-02-2020 {
+    .home-page__advantage {
+      margin-top: -196px;
+    }
   }
 }
