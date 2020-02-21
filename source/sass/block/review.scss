@@ -16,16 +16,18 @@
 
   .review__glide {
     position: relative;
+    padding-top: 150px;
+    padding-bottom: 125px;
   }
 
   .review__slide {
-    padding-top: 20px;
     padding-left: 45px;
-    padding-bottom: 50px;
     padding-right: 45px;
   }
 
   .review__list {
+    margin-top: 0;
+    margin-bottom: 0;
     color: $white;
   }
 
@@ -64,6 +66,7 @@
   .review__desc {
     font-size: 22px;
     line-height: 32px;
+    margin-top: 0;
     margin-bottom: 40px;
   }
 
@@ -110,7 +113,6 @@
     .review__slide {
       width: 80%;
       margin: 0 auto;
-      padding-top: 45px;
     }
 
     .review__arrow-wrap {
